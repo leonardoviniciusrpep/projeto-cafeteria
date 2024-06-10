@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor-principal: #d3ad7f;
+    --cor-branca: white;
+    --cor-preta: #13131a;
+    --cor-background: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.cabecalho section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.nav a {
+    color: var(--cor-branca);
+    margin: 0 1rem;
+    font-size: 1.8rem;
+}
+
+.nav a:hover {
+    color: var(--cor-principal);
+    font-size: 2.2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.1rem solid var(--cor-principal);
+}
+
+.icones img {
+    margin: 1rem;
+}
+
+.icones img:hover {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.1rem solid var(--cor-principal);
+}
+
+.botao {
+    padding: 1rem 3rem;
+    color: white;
+    background-color: var(--cor-principal);
+    display: inline-block;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 7px;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+.botao:hover {
+    background-color: #80684c;
+    font-size: 1.8rem;
+}
+
+.home-conteudo {
+    background-image: url(https://i.ibb.co/KX8pvpC/home-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-conteudo section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteudo {
+    max-width: 60rem;
+}
+
+.conteudo h3 {
+    text-transform: uppercase;
+    color: var(--cor-branca);
+    font-size: 6rem;
+    padding-bottom: 1rem;
+}
+
+.conteudo p {
+    color: white;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 1.7;
+    padding-bottom: 1rem;
+}
