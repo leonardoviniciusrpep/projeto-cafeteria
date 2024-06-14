@@ -25,13 +25,11 @@ body {
     background-color: var(--cor-background);
 }
 
-
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
 }
-
 
 .cabecalho {
     position: fixed;
@@ -40,6 +38,7 @@ section {
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background-color: var(--cor-background);
 }
 
 .cabecalho section {
@@ -126,3 +125,198 @@ section {
     line-height: 1.7;
     padding-bottom: 1rem;
 }
+
+.titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.titulo span {
+    color: var(--cor-principal);
+    text-transform: uppercase;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-preta);
+    gap: 2rem;
+}
+
+.sobre .row .conteudo {
+    padding: 1rem;
+}
+
+.sobre .row .conteudo h3 {
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    top: -30px;
+}
+
+.sobre .row .conteudo p {
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-indent: 10px;
+}
+
+.sobre .row .conteudo a {
+    margin-top: 50px;
+    position: relative;
+    left: 34%; 
+    top: -30px;
+}
+
+.menu .todos-itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+
+.menu .preco {
+    color: var(--cor-branca);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.menu .preco span {
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.menu .todos-itens .itens {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+}
+
+.menu .todos-itens .itens:hover {
+    background-color: var(--cor-branca);
+}
+
+.menu .todos-itens .itens:hover>* {
+    color: var(--cor-preta);
+    font-weight: bolder;
+}
+
+.menu .todos-itens .itens h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--cor-branca);
+}
+
+.menu .todos-itens .itens img {
+    height: 12rem;
+}
+
+.menu .botao:hover {
+    background-color: var(--cor-principal);
+    font-size: 1.6rem;
+}
+
+.clientes .cliente-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.clientes .box {
+    border: var(--border);
+    text-align: center;
+    color: var(--cor-branca);
+    padding: 2rem 2rem;
+}
+
+.clientes .box p {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.8rem;
+}
+
+.clientes .box .foto-cliente {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    padding: 1rem 0;
+}
+
+
+.clientes .box h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.clientes .box .stars {
+    margin: 1rem;
+}
+
+.clientes .box:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.endereco iframe {
+    border: 1px solid rgb(175, 175, 175);
+    padding: 1px;
+}
+
+.footer {
+    padding: 1px;
+}
+
+.footer .redes-sociais {
+    text-align: center;
+    padding: 1px;
+    
+}   
+
+.footer .redes-sociais img {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.footer .redes-sociais img:hover {
+    background-color: var(--cor-principal);
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
